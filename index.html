@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f6f7f4">
+  <meta name="description" content="교육에 필요한 한글 서식 3종을 내려받으세요.">
+  <title>교육 자료실</title>
+  <style>
+    :root { color-scheme: light; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Malgun Gothic", sans-serif; color: #202a24; background: #f6f7f4; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; min-height: 100svh; }
+    main { max-width: 800px; margin: 0 auto; padding: 100px 24px 48px; }
+    .label { display: inline-block; margin: 0 0 20px; padding: 7px 12px; border: 1px solid #dce5dc; border-radius: 100px; font-size: 12px; font-weight: 700; color: #3d684e; background: #edf3ed; }
+    h1 { margin: 0; font-size: clamp(30px, 6vw, 40px); line-height: 1.35; letter-spacing: -1.5px; }
+    .intro { margin: 14px 0 38px; color: #626c65; font-size: 15px; line-height: 1.8; word-break: keep-all; }
+    .list { margin: 0; padding: 0; list-style: none; overflow: hidden; background: #fff; border: 1px solid #e0e5df; border-radius: 18px; }
+    .file { display: flex; align-items: center; gap: 18px; padding: 25px 24px; }
+    .file + .file { border-top: 1px solid #edf0eb; }
+    .number { color: #718477; font-size: 13px; font-weight: 600; font-variant-numeric: tabular-nums; }
+    .details { flex: 1; min-width: 0; }
+    h2 { margin: 0; font-size: 16px; line-height: 1.6; font-weight: 600; letter-spacing: -.4px; word-break: keep-all; overflow-wrap: anywhere; }
+    .type { display: block; margin-top: 5px; color: #788079; font-size: 12px; }
+    .download { display: inline-flex; justify-content: center; align-items: center; gap: 7px; flex-shrink: 0; min-height: 42px; padding: 10px 14px; border: 1px solid #dce5dc; border-radius: 9px; background: #f3f7f2; color: #315c42; text-decoration: none; font-size: 13px; font-weight: 600; transition: background .15s, border-color .15s; }
+    .download:hover { background: #e4eee2; border-color: #bdcebd; }
+    .download:focus-visible { outline: 3px solid #315c42; outline-offset: 4px; }
+    .download svg { width: 16px; height: 16px; }
+    .note { display: flex; align-items: flex-start; gap: 8px; margin: 20px 4px 0; color: #717a73; font-size: 12px; line-height: 1.8; word-break: keep-all; }
+    .note svg { flex-shrink: 0; width: 15px; height: 15px; margin-top: 3px; }
+    footer { margin-top: 56px; color: #858c86; font-size: 12px; }
+    @media (max-width: 520px) {
+      main { padding: 58px 18px 32px; }
+      .intro { margin-bottom: 28px; }
+      .file { flex-wrap: wrap; padding: 22px 18px; gap: 12px; }
+      .number { align-self: flex-start; margin-top: 5px; }
+      .details { flex-basis: calc(100% - 36px); }
+      .download { margin-left: 28px; }
+      h2 { font-size: 15px; }
+      footer { margin-top: 40px; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header>
+      <p class="label">교육생을 위한 자료</p>
+      <h1>교육 자료실</h1>
+      <p class="intro">교육에 필요한 서식을 한곳에 모았습니다.<br>아래에서 필요한 파일을 내려받으세요.</p>
+    </header>
+
+    <!--
+      GitHub에 아래 파일 3개를 index.html과 같은 폴더에 업로드하세요.
+      파일명과 확장자는 아래 href의 이름과 정확히 같아야 합니다.
+      실제 확장자가 .hwpx라면 href와 download의 .hwp를 .hwpx로 바꾸세요.
+      1. 고발장(서식).hwp
+      2. 선거법위반행위 정황보고(서식).hwp
+      3. 선거법위반행위 조사결과보고(서식).hwp
+    -->
+    <ul class="list" aria-label="다운로드 가능한 교육 서식">
+      <li class="file">
+        <span class="number" aria-hidden="true">01</span>
+        <div class="details">
+          <h2>고발장(서식)</h2>
+          <span class="type">한글 문서 · HWP</span>
+        </div>
+        <a class="download" href="1. 고발장(서식).hwp" download="1. 고발장(서식).hwp" aria-label="고발장 서식 다운로드">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/></svg>
+          다운로드
+        </a>
+      </li>
+      <li class="file">
+        <span class="number" aria-hidden="true">02</span>
+        <div class="details">
+          <h2>선거법위반행위 정황보고(서식)</h2>
+          <span class="type">한글 문서 · HWP</span>
+        </div>
+        <a class="download" href="2. 선거법위반행위 정황보고(서식).hwp" download="2. 선거법위반행위 정황보고(서식).hwp" aria-label="선거법위반행위 정황보고 서식 다운로드">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/></svg>
+          다운로드
+        </a>
+      </li>
+      <li class="file">
+        <span class="number" aria-hidden="true">03</span>
+        <div class="details">
+          <h2>선거법위반행위 조사결과보고(서식)</h2>
+          <span class="type">한글 문서 · HWP</span>
+        </div>
+        <a class="download" href="3. 선거법위반행위 조사결과보고(서식).hwp" download="3. 선거법위반행위 조사결과보고(서식).hwp" aria-label="선거법위반행위 조사결과보고 서식 다운로드">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M4 16v4h16v-4"/></svg>
+          다운로드
+        </a>
+      </li>
+    </ul>
+    <p class="note">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v6m0-10v.1"/></svg>
+      한글 문서를 열 수 있는 프로그램이 필요합니다.
+    </p>
+    <footer>교육 자료실</footer>
+  </main>
+</body>
+</html>
